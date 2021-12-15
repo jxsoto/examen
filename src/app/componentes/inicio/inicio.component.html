@@ -1,0 +1,24 @@
+<ul>
+    <li *ngFor="let productos of ListaProductos">
+
+        <img src="../../../assets/{{productos.imagen}}" alt="{{productos.imagen}}">
+        <h2>{{productos.marca}}</h2>
+        <h2>{{productos.nombre}}</h2>
+        <span class="material-icons">star</span>
+        <span class="material-icons">star</span>
+        <span class="material-icons">star</span>
+        <span class="material-icons">star</span>
+        <span class="material-icons">star</span>
+        <span class="material-icons">star</span>
+        <span class="material-icons">star</span>
+        <span class="material-icons">star</span>
+        <span class="material-icons">star_border</span>
+        <span class="material-icons">star_border</span>
+        <p></p>
+        <button [routerLink]="['/detalleProducto',productos.id]" routerLinkActive="router-link-active" >ver mas</button>
+        <p></p>
+        <p></p>
+        <p>${{productos.precio}}</p>
+
+    </li>
+</ul>

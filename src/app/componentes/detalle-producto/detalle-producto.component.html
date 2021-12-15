@@ -1,0 +1,22 @@
+<img src="../../../assets/{{producto.imagen}}" alt="{{producto.imagen}}">
+<div>
+<h2>{{producto.marca}} <span class="material-icons">favorite</span></h2>
+
+<h2>{{producto.nombre}}</h2>
+<a>{{producto.descripcion}}</a>
+<p>${{producto.precio}}</p>
+<form [formGroup]="form" (ngSubmit)="crear()">
+    <label>Cantidad</label> <p></p>
+    <input formControlName="nombre" type="number"  > <p></p>
+    <button type="submit">Agregar a la bolsa</button>
+    
+</form>
+</div>
+<div id="recomendaciones">
+<ul>
+    <h3>Recomendaciones</h3>
+    <li>{{producto.recomendacion1}}</li>
+    <li>{{producto.recomendacion2}}</li>
+    <li>{{producto.recomendacion3}}</li>
+</ul>
+</div>
